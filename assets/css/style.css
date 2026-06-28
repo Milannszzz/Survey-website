@@ -949,3 +949,177 @@ font-size:2.2rem;
 }
 
 }
+
+/*==================================
+PREMIUM CTA
+==================================*/
+
+.cta-section{
+
+    padding:140px 8%;
+
+    background:#f8f9fc;
+
+}
+
+.cta-box{
+
+    max-width:1050px;
+
+    margin:auto;
+
+    background:#0B1F3A;
+
+    border-radius:28px;
+
+    padding:80px 70px;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+
+}
+
+/* Gold Accent */
+
+.cta-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:120px;
+
+    height:6px;
+
+    background:#D4AF37;
+
+    border-radius:0 0 20px 20px;
+
+}
+
+.cta-tag{
+
+    display:inline-block;
+
+    color:#D4AF37;
+
+    letter-spacing:3px;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    margin-bottom:22px;
+
+}
+
+.cta-box h2{
+
+    color:white;
+
+    font-size:3.2rem;
+
+    line-height:1.15;
+
+    font-family:'Poppins',sans-serif;
+
+    margin-bottom:25px;
+
+}
+
+.cta-box p{
+
+    max-width:700px;
+
+    margin:0 auto;
+
+    color:#d9d9d9;
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+}
+
+.cta-buttons{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:22px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta-outline{
+
+    border:2px solid rgba(255,255,255,.6);
+
+}
+
+.cta-outline:hover{
+
+    background:white;
+
+    color:#111;
+
+}
+
+/* Decorative circles */
+
+.cta-box::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.03);
+
+    top:-140px;
+
+    right:-120px;
+
+}
+
+@media(max-width:768px){
+
+.cta-box{
+
+padding:60px 30px;
+
+}
+
+.cta-box h2{
+
+font-size:2.2rem;
+
+}
+
+.cta-box p{
+
+font-size:1rem;
+
+}
+
+}
