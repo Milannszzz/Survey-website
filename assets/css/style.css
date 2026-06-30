@@ -194,8 +194,6 @@ PREMIUM MOBILE MENU
         top:0;
         right:-100%;
 
-        left:auto;
-
         width:80%;
         max-width:360px;
 
@@ -264,12 +262,6 @@ PREMIUM MOBILE MENU
         padding-left:10px;
 
     }
-
-   .navbar{
-
-    position:relative;
-
-}
 /* ===========================
    HERO
 =========================== */
