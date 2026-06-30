@@ -1092,6 +1092,102 @@ grid-template-columns:1fr;
 }
 
 }
+
+/*==========================
+PARTNERS
+==========================*/
+
+.partners{
+
+    padding:110px 8%;
+
+    background:#fff;
+
+}
+
+.partners-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:25px;
+
+    align-items:center;
+
+}
+
+.partner-card{
+
+    background:#fff;
+
+    border:1px solid #eee;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.35s;
+
+}
+
+.partner-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.partner-card img{
+
+    max-width:130px;
+
+    filter:grayscale(100%);
+
+    opacity:.7;
+
+    transition:.35s;
+
+}
+
+.partner-card:hover img{
+
+    filter:none;
+
+    opacity:1;
+
+}
+
+@media(max-width:900px){
+
+.partners-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.partners-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
 /*==========================
 CALL TO ACTION
 ==========================*/
