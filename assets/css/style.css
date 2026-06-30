@@ -194,6 +194,8 @@ PREMIUM MOBILE MENU
         top:0;
         right:-100%;
 
+        left:auto;
+
         width:80%;
         max-width:360px;
 
@@ -263,13 +265,9 @@ PREMIUM MOBILE MENU
 
     }
 
-}
+   .navbar{
 
-    .quote-btn{
-
-        display:none;
-
-    }
+    position:relative;
 
 }
 /* ===========================
