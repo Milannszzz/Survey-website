@@ -113,24 +113,32 @@ revealSections();
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
+const menuOverlay = document.querySelector(".menu-overlay");
+const icon = menuToggle.querySelector("i");
 
 menuToggle.addEventListener("click", () => {
 
     navLinks.classList.toggle("active");
-
-    const icon = menuToggle.querySelector("i");
+    menuOverlay.classList.toggle("active");
 
     if(navLinks.classList.contains("active")){
 
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-xmark");
+        icon.classList.replace("fa-bars","fa-xmark");
 
     }else{
 
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
+        icon.classList.replace("fa-xmark","fa-bars");
 
     }
+
+});
+
+menuOverlay.addEventListener("click",()=>{
+
+    navLinks.classList.remove("active");
+    menuOverlay.classList.remove("active");
+
+    icon.classList.replace("fa-xmark","fa-bars");
 
 });
 
@@ -139,9 +147,9 @@ document.querySelectorAll(".nav-links a").forEach(link=>{
     link.addEventListener("click",()=>{
 
         navLinks.classList.remove("active");
+        menuOverlay.classList.remove("active");
 
-        menuToggle.querySelector("i").classList.remove("fa-xmark");
-        menuToggle.querySelector("i").classList.add("fa-bars");
+        icon.classList.replace("fa-xmark","fa-bars");
 
     });
 
