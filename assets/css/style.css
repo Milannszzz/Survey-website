@@ -149,6 +149,79 @@ header{
 
 }
 
+/*==========================
+MOBILE MENU
+==========================*/
+
+.menu-toggle{
+
+    display:none;
+
+    color:white;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
+@media(max-width:992px){
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:90px;
+
+        left:-100%;
+
+        width:100%;
+
+        height:calc(100vh - 90px);
+
+        background:#0B1F3A;
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:flex-start;
+
+        align-items:center;
+
+        padding-top:60px;
+
+        gap:35px;
+
+        transition:.4s ease;
+
+    }
+
+    .nav-links.active{
+
+        left:0;
+
+    }
+
+    .nav-links a{
+
+        font-size:1.3rem;
+
+    }
+
+    .quote-btn{
+
+        display:none;
+
+    }
+
+}
 /* ===========================
    HERO
 =========================== */
