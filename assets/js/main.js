@@ -86,3 +86,27 @@ observer.disconnect();
 })
 
 observer.observe(document.querySelector(".stats"));
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealSections() {
+
+    reveals.forEach(section => {
+
+        const windowHeight = window.innerHeight;
+        const sectionTop = section.getBoundingClientRect().top;
+        const revealPoint = 120;
+
+        if(sectionTop < windowHeight - revealPoint){
+
+            section.classList.add("active");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealSections);
+
+revealSections();
